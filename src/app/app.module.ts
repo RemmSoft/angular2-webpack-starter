@@ -11,13 +11,11 @@ import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularcla
 import { ENV_PROVIDERS } from './environment';
 import { ROUTES } from './app.routes';
 // App is our top level component
-import { AppComponent } from './app.component';
+import { AppComponent } from './ui';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
-import { AppState, InternalStateType } from './app.service';
-import { HomeComponent } from './home';
-import { AboutComponent } from './about';
-import { NoContentComponent } from './no-content';
-import { XLarge } from './home/x-large';
+import { AppState, InternalStateType } from './service';
+import { HomeComponent, AboutComponent, NoContentComponent } from './page';
+import { XLarge } from './directive';
 
 // Application wide providers
 const APP_PROVIDERS = [
